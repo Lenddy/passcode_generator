@@ -8,7 +8,7 @@ public class passCode : Controller{
         }
         count++; //incremanting count by 1
         HttpContext.Session.SetInt32("num",(int)count);//setting another session that is an int then passing count as a value of a key
-        string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //giving a string that we are going  to select random values from
+        string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"; //giving a string that we are going  to select random values from
         char[] arr = new char[14];//making an array that holds max 14 values
         Random rand = new Random(); //importing random
         for(int i = 0;i <14 ;i++){ //making a loop that goes throuth the length of the string variable letter  then  selecting  14 random values
